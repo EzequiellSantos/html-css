@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /* height: 100%; */
+}
+
+body{
+   background-image: linear-gradient( to right, #99B1BF , #D9D6D2  );
+} 
+
+main {
+    background-color: white;
+    border-radius: 10px;/* borda do main */
+    box-shadow: 5px 5px 15px rgba(88, 104, 114, 0.76);
+    width: 600px ;/* largura */
+    padding: 10px;/* vai dar um espalço no final de cada linha */
+    margin: auto; /* Centralizar a tela */
+}
+
+h1{
+   color: #20507a;
+   text-align: center; 
+   text-shadow: 1px 1px 2px #20507a;
+}
+
+h2 {
+    color: #405F73;
+}
+p { 
+    text-align: justify;
+}
+/* links */
+a:link {
+    transition: all 0.4s ease; /*Aplicamos um efeito de transição*/
+   /*  text-decoration: none;...Removemos o sublinhado*/ 
+   font-size: 17px; /*Alteramos o tamanho da fonte*/
+    font-family: Arial, Helvetica, sans-serif; /*Mudamos a fonte padrão para verdana*/
+    padding:5px; /*Adicionamos um espaçamento de 10px em TOP, BOTTOM, RIGHT e LEFT*/
+    color: #00466e; /*Mudamos a cor para Azul*/
+}
+ a:visited{
+    color: #787e83; 
+} 
+ a:hover {
+   color: #0078c2e1; 
+}
+ a:active {
+   color: #7bd3d3;
+}

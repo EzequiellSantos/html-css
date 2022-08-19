@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+
+
+
+*{            /*   Configurações Globais das CSS */
+/* height: 100%; */
+font-family: Arial, Helvetica, sans-serif;
+}  
+
+
+main{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 7px 10px 14px #86807a;
+    width: 730px;
+    padding: 15px;
+    margin: auto;
+}
+body{
+background-image: linear-gradient(to right, #A9D9D0 60%, #F2E7DC);
+
+}
+
+h1{
+    color: #027373;
+    text-align: center;
+    text-shadow: 1px 1px 3px ;
+}
+h2{
+    color: #027373;
+}
+p{   
+    color: #0D0D0D;
+
+}
+a:link {
+    transition: all 0.4s ease; /*Aplicamos um efeito de transição*/
+   /*  text-decoration: none;...Removemos o sublinhado*/ 
+   font-size: 17px; /*Alteramos o tamanho da fonte*/
+    font-family: Arial, Helvetica, sans-serif; /*Mudamos a fonte padrão para verdana*/
+    padding:5px; /*Adicionamos um espaçamento de 10px em TOP, BOTTOM, RIGHT e LEFT*/
+    color: #0D0D0D; /*Mudamos a cor para Azul*/
+    text-align: justify;
+}
+ a:visited{
+    color: #63a89c; 
+} 
+ a:hover {
+   color: #027777; 
+}
+ a:active {
+   color: #027373;
+   transition: all 0.3s ease;
+}

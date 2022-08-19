@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L o a d i n g . . . .</title>
+    <style>
+        body{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+    <style>
+        @keyframes spin{
+            to{
+                 transform: rotate(360deg);        /* tela de smooth (carregamento) */
+            }
+        }
+        .loader {
+            width: 64px;
+            height: 64px;                                                       
+            border-radius: 50%;
+
+            border-top: 8 px solid rgba( 255, 255, 255, 1);     /* corpo da bola de carregamento */
+            border-left:  8 px solid rgba( 255, 255, 255, 1);
+           border-right:  8 px solid rgba( 255, 255, 255, 1); 
+           animation: spin 0.575s infinite linear;
+        }
+    </style> 
+
+    <input type="text"><br>                
+    <input type="color"><br>
+    <input type="password"><br>         <!-- tipos de input -->
+    <input type="checkbox"><br>
+    <input type="time"><br>
+    <input type="date"><br>
+    <input type="range"><br>
+</body>

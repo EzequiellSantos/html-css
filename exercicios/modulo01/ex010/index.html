@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="CoelhoFavicon.ico.png" type="image/x-icon">
+    <title>Trbalhando com Links</title>
+    <style>
+        body{
+            background-color: rgb(7, 7, 19);
+        }
+        text{
+          background-color: white;
+        }
+        mark{
+            background-color: aqua;
+        }
+    </style> 
+</head>
+<body>
+    <h1 style="color: aliceblue;">Usando Links Externos</h1>
+    <p style="color: white;">Você pode acessar o meu instagram <a href="https://www.instagram.com/@diabinho.x_x/">@diabinho.x_x</a></p>
+    <!--O link pode não está funcionando, porém é direcionado ao instagram-->
+    <P style="color: white;">Vamos acessar o <a href="https://gustavoGuanabara.github.io/" target="_blank" rel="external">repositório público do Guanabara no GitHub</a></P>
+
+    <h2 style="color: white;">Selecionando a tradução ao idioma utilizado pelo visitante</h2> 
+    <p style="color: white;">Aqui vamos utilizar o recurso HREFLANG que vai fazer a utilização do idioma que for escolhido dentre os parênteses--<a href="https://www.instagram.com/@_ezequiel.exe_/perfil" target="_blank" rel="external" hreflang="pt-br">Link do instagram</a></p>
+
+    <h2 style="color:white;">Tipos de Target</h2>
+    <p style="color: white;">Para certas ocasiões para melhorar a experiencia do usuário e  a visibilidade do seu site é usado TARGET nos link para ocasiões como: <p style="color: white;">Leva o usuário para uma nova janela em branco <code>_blank</code></p>
+    <p style="color: white;">Vai abrir o link no frame atual <code>_self</code></p> <p style="color: white;">Vai desfazer todos os frames e abrir o destino no navegador completo <code>_top</code></p>
+    <p style="color: white;">Similar ao uso do <code>_top</code> em uma referência à janela mãe <code>_parent</code></p>
+    <p style="color: white;">Caso esteja usando frames, indicar o nome da janela à abrir <code>nome-do-frame</code></p>
+
+    <h2 style="color: white;">Atributo <code>rel</code></h2>
+    <p style="color: white;">Serve pra indicar a natureza do link</p>
+    <p style="color: white;">1.0<code> <mark>next</mark></code> indica o link é para a próxima parte do documento atual</p>
+    <p style="color: white;">2.0<code> <mark>prev</mark></code> Indica que o link é para a parte anterior do documento atual</p>
+    <p style="color: white;">3.0<code> <mark>author</mark></code> indica que é um link parao site do autor do artigo atual</p>
+    <p style="color: white;">4.0<code> <mark>external</mark></code> indica que é um link para outro site que não faz parte do site</p>
+    <p style="color: white;">5,0<code> <mark>nofollow</mark></code> indica que é um link para um site não endossado, como um link pago</p>
+
+    <h2 style="color: white;">Testando os <code>rel</code>s</h2>
+    <p style="color: white;">Para acessar um site básico de <a href="https://yt1s.com/en274" target="_blank" hreflang="pt-br" rel="external">conversor de música</a></p>
+    <!--O link acima é chamado de limk externo-->
+    <p style="color: white;">Para acessar uma <a href="pag002.html" target="_self" hreflang="pt-br" rel="next">Segunda página</a> do mesmo código</p>
+    <!--O link acima é chamado de link interno-->
+
+    <h3 style="color: white;">Downloads</h3>
+    <p style="color: white;"><em> **EXEMPLO </em>para fazer o Download de qualquer <a href="link do arquivo" target="_blank" download="nome.do.arquivo" type="tipo.de.arquivo">arquivo</a> usaremos</p>
+
+    <h2 style="color: white;">Testando Tipos de <code>Type</code>
+    <p style="color: white;">Types mais usados no dia-a-dia
+    <br><code>application/zip</code>
+    <br><code>text/html</code>
+    <br><code>text/css</code>
+    <br><code>text/javascript</code>
+    <br><code>video/mp4</code>
+    <br><code>video/H254</code>
+    <br><code>cidep/JPEG</code>
+    <br><code>audio/aac</code>
+    <br><code>audio/mpeg</code>
+    <br><code>fonte/ttf</code>
+    <br><code>image/jpeg</code>
+    <br><code>image/png</code></p>
+
+    <!--<h3 style="color: wheat;">Exemplos de Downloads</h3>
+    <p style="color: white;">Para baixar uma <a href="https://youtu.be/KJWHpqrcwkA" target="_blank" rel="external" download="melhordia6.com" type="audio/mpeg">música   
+    </a></p> . . . . . . não da para baixar ainda... mas me aguarde-->&#x1F63C
+   
+    <h1 style="color: white;">Usando link internos</h1>
+    <p style="color: white;">Esta é a primeira página do site, se você quiser pode acessar a minha <a href="pag002.html" rel="next">segunda página</a> do site</p>
+    <p style="color: white;">Para acessar a terceira página de <a href="noticias/pag003.html" targert="_self" rel="next">notícias</a></p>
+    <!--_self pois se ficar com muitas páginas, o seu site pode ficar zuado!!-->
+    <hr>
+    <h2 style="color: white;">Link para Downloads</h2>
+    <ul style="color: white;">
+    <li><a href="Livro/poema.pdf" target="_blank" referrerpolicy="external" type="application/pdf" >Baixar livro</a>
+    </li>
+    <li><a href="Livro/poema.zip" type="application/zip">Baixar arquivo ZIP</a></li>
+    </ul>
+    <!-- KKkkkkk cara eu to voltando aqui depois de um mes estudando html, pelo amor de Deus nao usa esses estilos ai no teu codigo, tem maneira melhor de mudar a cor da fonte e fundo, mais pra frente tu vai ver. kkkkkk esse código ai ta muito poluído slk -->
+</body>
+</html>

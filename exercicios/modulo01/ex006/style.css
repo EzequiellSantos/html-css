@@ -1,0 +1,24 @@
+@charset "UTF-8"
+
+
+body{
+    background-color: #000020;
+} /* <3 */
+h1.el{
+    color: blueviolet;
+}
+p.yt{
+    color: white;
+    font-size: 30px;
+}
+em.ui{
+    color: rgb(12, 156, 223);
+}
+p.mg{
+    text-align: center;
+}
+h3{
+    color: #bbbbbb;
+    font-size: 70px;
+    font-family: serif;
+}

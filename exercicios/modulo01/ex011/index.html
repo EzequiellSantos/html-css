@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em html5</title>
+    <link rel="shortcut icon" href="Favicon.EZ/CoelhoFavicon.ico.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>        
+    <p>Tente Abrir essas imagens em diferentes dispositivos ou simplesmente aumente e diminua a imagem do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-.p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto.m.png" type="image/png">
+        <img src="Imagens/foto+.png.png" alt="imagem flexível"> 
+    </picture>
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em html5</p>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/Fantasyland - Quincas Moreira.mp3" type="audio/mpeg">
+        <source src="midia/Fantasyland - Quincas Moreira.ogg" type="audio/ogg">
+        <source src="midia/Fantasyland - Quincas Moreira.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzur áudio</p>
+        <a href="midia/Fantasyland - Quincas Moreira.mp3" download="Quincas Moreira.mp3" type="audio/mpeg">Clique aqui para baixar o arquivo MP3</a>
+    </audio>
+</body>
+</html>

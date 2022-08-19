@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+
+main{
+   background-color: white;
+   width: 150px;
+   padding: 10px;
+   margin: auto;
+}
+
+body{
+   background-image: linear-gradient(to bottom ,#4C5DD1,#A036BE, #D24091 ,#F6514F,#FFD253);
+   background-attachment: fixed;
+}
+body.tst{
+   font-family: Arial, Helvetica, sans-serif;
+   background-image: linear-gradient(90deg, yellow, red);
+   color: black;
+
+}
+/* Color Theme Swatches in Hex */
+ h1.hex{ 
+  color: #012340; 
+  color: #025939;                                             
+  color: #027333; 
+  color: #03A63C; 
+  color: #04D939;}
+
+/* Color Theme Swatches in RGBA */
+ h1.rgba{ 
+    color: rgba(1, 34, 63, 1); 
+    color: rgba(1, 89, 57, 1);                                            /* PALETA DE COR VERDE */
+    color: rgba(2, 114, 51, 1); 
+    color: rgba(3, 165, 60, 1); 
+    color: rgba(4, 216, 57, 1); }
+
+/* Color Theme Swatches in HSLA */
+ h1.hsla{ 
+    color: hsla(208, 96, 12, 1);
+    color: hsla(157, 96, 17, 1); 
+    color: hsla(146, 96, 22, 1); 
+    color: hsla(140, 96, 33, 1); 
+    color: hsla(135, 96, 43, 1); }
+
+      
+/* Links não visitados */
+a:link {
+   transition: all 0.3s ease; /*Aplicamos um efeito de transição*/
+   text-decoration: none; /*Removemos o sublinhado*/
+   font-size: 1.3em; /*Alteramos o tamanho da fonte*/
+   font-family: verdana; /*Mudamos a fonte padrão para verdana*/
+   padding:10px; /*Adicionamos um espaçamento de 10px em TOP, BOTTOM, RIGHT e LEFT*/
+   color: #00a2ff; /*Mudamos a cor para Azul*/
+   }
+/* Quando já clicamos no link anteriormente */
+a:visited{
+   color: #1100fa; /*Mudamos a cor para Laranja*/
+ } 
+
+        
+/* Quando passamos o mouse sobre o link */
+a:hover {
+  color: #d000ff; /*Mudamos a cor para Rosa*/
+}
+
+/* Quando clicamos no link */
+a:active {
+  color: #06f53d; /*Mudamos a cor para Verde*/
+}
