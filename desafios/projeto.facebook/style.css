@@ -35,6 +35,7 @@
 }
 
 :root{
+    --corlor:#d0e6f9;
     --cor0:#F2F2F2;
     --cor01:#d0e5f7;
     --cor02:#6db5f3;
@@ -42,8 +43,11 @@
     --cor04:#065ac7; 
     --cor05:#05418f;
     
-    --fonte0: sans francisco r, arial, helvetica, sans-serif;
-    --fonte01: sans francisco sb, arial, helvetica, sans-serif;
+    --fonte00: 'sans francisco r', arial, helvetica, sans-serif;
+    --fonte01: 'sans francisco sb', arial, helvetica, sans-serif;
+    --fonte02 :'roboto', arial, helvetica, sans-serif;
+    --fonte03: 'roboto bold', arial, helvetica, sans-serif;
+    --fonte04: 'roboto bold italic', arial;
 }
 body{
     background-color: var(--cor01);
@@ -55,42 +59,48 @@ body{
     
 }
 header{
-    color: #f2f2f2;
-    background-image: linear-gradient(to right, var(--cor05), #F2F2F2);
-    font-family: Roboto bold;
+    color: var(--cor0);
+    background-image: linear-gradient(to right, var(--cor05), var(--cor0));
     text-align: left;
     height: 150px;
-    padding: opx 10px 0px 10px;
+    padding: 0px 10px 0px 10px;
 }
 
 header > h1{
+    font-family: var(--fonte01);
+    font-size: 4em;
+    margin-bottom: 10px;
     text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.699);
-    margin: 0px 0px 10px 10px;
-    padding: 40px 0px opx 10px;
+    margin: 0px 0px -10px 11px;
+    padding: 14px 0px 0px 10px;
 }
 
 header > p{
-    padding: 0px 0px 10px 10px;
+    font-family: var(--fonte02);
+    font-size: 1.2em;
+    width: 400px;
+    padding: 0px 0px 15px 20px;
     text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.699);
 }
 
 nav{
-    background-image: linear-gradient(to right, #05418f, #F2F2F2);
-    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.415);
+    font-weight: bold;
+    background-image: linear-gradient(to right, var(--cor05), var(--cor0));
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.295);
+    padding: 10px;
+    display: block;
 }
 
 nav > a {
-    font-family: roboto bold;
-    color: white;
-    border-radius: 5px;
-    padding-left: 6px;
-    padding-right: 6px;
-    background-color: var(--cor05);
+    color: var(--corlor);
+    padding: 10px;
     text-decoration: none;
 }
 
 a:hover{
-    background-color: var(--cor03);
+    color:var(--cor05);
+    background-color: var(--cor02);
+    border-radius: 5px;
 }
 
 a:active{
