@@ -73,6 +73,7 @@
 body{
     background-color: var(--cor01);
     font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
 }
 *{
     padding: 0;
@@ -140,6 +141,7 @@ main{
     padding-bottom: 20px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.247);
     border-radius: 0px 0px 10px 10px;
+    width: 100%;
 }
 
 span{
@@ -148,6 +150,7 @@ span{
 
 source{
     margin: 15px 0px;
+    width: 100%;
 }
 
 h1.titulo{
@@ -177,9 +180,11 @@ aside > picture{
 }
 
 aside.crosd{
+    margin: auto;
     margin-top: 15px;
     border-radius: 10px;
     background-color: var(--cor02);
+    width: 95%;
 }
 
 aside.crosd > h2{
