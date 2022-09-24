@@ -134,9 +134,9 @@ main{
     font-family: var(--fonte04);
     margin: auto;
     margin-bottom: 30px;
-    display: block;
+/*     display: block; */
     text-align: center;
-    min-width: 300px;
+    min-width: 350px;
     max-width: 1000px;
     padding-bottom: 20px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.247);
