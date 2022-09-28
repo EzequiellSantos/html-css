@@ -138,7 +138,7 @@ main{
 /*     display: block; */
     text-align: center;
     min-width: 400px;
-    max-width: 75%;
+    max-width: 1000px;
     padding-bottom: 20px;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.247);
     border-radius: 0px 0px 10px 10px;
@@ -146,10 +146,6 @@ main{
 
 span{
     color: var(--cor05);
-}
-
-source{
-    width: 100%;
 }
 
 h1.titulo{
@@ -174,16 +170,11 @@ aside > p{
     font-size: 1em;
 }
 
-aside > picture{
-    width: 100%;
-}
-
 aside.crosd{
     margin: auto;
     margin-top: 15px;
     border-radius: 10px;
     background-color: var(--cor02);
-    width: 95%;
 }
 
 aside.crosd > h2{
