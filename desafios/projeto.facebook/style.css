@@ -85,7 +85,7 @@ header{
     background-image: linear-gradient(to right, var(--cor05), var(--cor00));
     text-align: left;
     min-height: 150px;
-    padding: 40px 10px 0px 10px;
+    padding: 40px 0px 0px 10px;
 }
 
 header > h1{
