@@ -7,13 +7,45 @@
     <link rel="shortcut icon" href="Favicon.EZ/Icons8-Ios7-Animals-Duck.ico" type="image/x-icon">
     <title>Personalização de Fundos</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         body{
             background-image: url('https://raw.githubusercontent.com/EzequiellSantos/html-css/main/exercicios/modulo01/Favicon.EZ/Martin-Berube-Flat-Animal-Mouse.ico');
             background-size: 100px 100px;
-            background-repeat: repeat-x; /* "reapeat" é auotmático */
+            background-repeat: no-repeat; /* "reapeat" é auotmático */
+        }
+
+        div#imagem{
+            height: 97vh;
+            width: 100%;
+            /* margin: 0px 750px 0px 0px ; */
+            background-image:url('Favicon.EZ/Martin-Berube-Flat-Animal-Mouse.ico') ;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-attachment: fixed;
+        }
+
+        div#texto{
+            width: 400px;
+            margin: -500px 0px 0px 10px; 
+            min-height: 373px;
         }
     </style>
 </head>
 <body><!-- <body background=""> se tornou obsoleto! -->
+    
+    <div id="imagem">
+    
+    </div>
+    
+    <div id="texto">   
+        <span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minus eaque adipisci perspiciatis facere. Porro, tempora minima repellendus veniam consectetur itaque impedit fuga hic a, omnis in eum, rem eligendi!Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minus eaque adipisci perspiciatis facere. Porro, tempora minima repellendus veniam consectetur itaque impedit fuga hic a, omnis in eum, rem eligendi!Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minus eaque adipisci perspiciatis facere. Porro, tempora minima repellendus veniam consectetur itaque impedit fuga hic a, omnis in eum, rem eligendi!Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minus eaque adipisci perspiciatis facere. Porro, tempora minima repellendus veniam consectetur itaque impedit fuga hic a, omnis in eum, rem eligendi!</p>
+        </span>
+    </div>
+ 
 </body>
 </html>
