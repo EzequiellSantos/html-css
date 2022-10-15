@@ -41,9 +41,6 @@
     --fonte03: 'Sriracha', cursive;
 }
 
-body{
-
-}
 a{
     color: var(--color00);
     font-weight: bolder;
@@ -116,6 +113,7 @@ article{
     background-size: cover;
     background-attachment: fixed;
     position: absolute;
+    
 }
 
 section{
