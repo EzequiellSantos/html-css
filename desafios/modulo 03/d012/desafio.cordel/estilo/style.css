@@ -1,24 +1,37 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+:root{
+    --fonte01:  Verdana, Geneva, Tahoma, sans-serif;
+    --fonte02: 'Passion One', cursive;
+    --fonte03:  'Sriracha', cursive;
+}
+
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte01);
 }
 
 header{
     background-color: black;
     color: white;
     text-align: center;
+
 }
 
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-size: 10vw; 
+    font-family: var(--fonte02);
 }
 
 header > p{
@@ -40,6 +53,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2.0em;
     padding-left: 30px;
+    font-family: var(--fonte03);
+    font-size: 3.4vw;
 }
 
 section.normal{
@@ -53,7 +68,8 @@ section.imagem{
 }
 
 section.imagem > p{
-    width: 400px;
+    padding: 6px;
+    display: inline-block; /* antes estava width:400px; mas deu uma puxada para o height, então a solução é colocar um display inline-block. assim ele ocupará todo o conteúdo de (p) {transformou numa caixa que se adpta ao tamnho do conteúdo*/
     background-color: rgba(0, 0, 0, 0.288);
 }
 
