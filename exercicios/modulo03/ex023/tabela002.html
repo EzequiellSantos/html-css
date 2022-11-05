@@ -25,6 +25,26 @@
             color: white;
         }
 
+        tbody > tr:nth-child(2n){ /*  2n é que vai fazer o background color só a cada duas linhas, se fosse 3n seria  a cada 3 linhas */
+            background-color: lightgray;
+        }
+        
+
+        /* tbody > tr:nth-child(odd){ odd de impar 
+            background-color: blueviolet;
+        }*/
+        
+        /*tbody > tr:nth-child(even){  even par 
+            background-color: cornflowerblue;
+        }*/
+ 
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         td.num{
             text-align: right;
         }
@@ -34,6 +54,7 @@
     <h1>Uso de tabelas Grandes</h1>
 
     <!-- anatomia para tabelas grandes
+        CAPTION -> LEGENDA DA TABELA
         THEAD parte do topp
             tr, td, th
 
@@ -45,10 +66,11 @@
 
     -->
     <table>
+        <caption>População das Unidade federativas</caption>
         <thead>
             <tr>
-                <th>ESTADO</th>
-                <th>POPULAÇÃO</th>
+                <th scope="col">ESTADO</th>
+                <th scope="col"style="width: 50px;">POPULAÇÃO</th>
             </tr>
         </thead>
 
@@ -165,7 +187,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td><strong>210.147.125</strong></td>  <!-- mesmo colocando o TFOOT em baixo do thead ele continua no final da tabela, pois no html5 existe a semântica -->
             </tr>
         </tfoot>
