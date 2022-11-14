@@ -13,6 +13,7 @@
         table{
             width: 400px;
             border-collapse: collapse;
+            position: relative; /* para fazer um cabeçario fixo a sua tabela deve conter essa configuração */
         }
 
         th, td{
@@ -23,6 +24,12 @@
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;/* para fazer um cabeçario fixo seu th deve conter essa configuração */
+            top: -1px;
+            background-color:  gray;
         }
 
         tbody > tr:nth-child(2n){ /*  2n é que vai fazer o background color só a cada duas linhas, se fosse 3n seria  a cada 3 linhas */
@@ -192,5 +199,11 @@
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit atque laudantium cumque, libero quam impedit molestias earum. Ex natus expedita quam, animi exercitationem repudiandae consequatur officiis quasi maxime voluptatem voluptas. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab veritatis, dolore, laborum sed nesciunt assumenda earum id ducimus enim ullam inventore quisquam suscipit consequatur maiores expedita ea doloribus, asperiores laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum suscipit fugit dolore praesentium eius, porro quam necessitatibus, cupiditate nihil qui laudantium quisquam aut tempore libero. Ut quod sequi aspernatur ducimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque recusandae quia odio sit qui quidem nulla harum natus, voluptatem magni? Modi, eum! Quaerat dignissimos vero, possimus laboriosam labore maxime in?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit atque laudantium cumque, libero quam impedit molestias earum. Ex natus expedita quam, animi exercitationem repudiandae consequatur officiis quasi maxime voluptatem voluptas. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab veritatis, dolore, laborum sed nesciunt assumenda earum id ducimus enim ullam inventore quisquam suscipit consequatur maiores expedita ea doloribus, asperiores laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum suscipit fugit dolore praesentium eius, porro quam necessitatibus, cupiditate nihil qui laudantium quisquam aut tempore libero. Ut quod sequi aspernatur ducimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque recusandae quia odio sit qui quidem nulla harum natus, voluptatem magni? Modi, eum! Quaerat dignissimos vero, possimus laboriosam labore maxime in?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit atque laudantium cumque, libero quam impedit molestias earum. Ex natus expedita quam, animi exercitationem repudiandae consequatur officiis quasi maxime voluptatem voluptas. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab veritatis, dolore, laborum sed nesciunt assumenda earum id ducimus enim ullam inventore quisquam suscipit consequatur maiores expedita ea doloribus, asperiores laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum suscipit fugit dolore praesentium eius, porro quam necessitatibus, cupiditate nihil qui laudantium quisquam aut tempore libero. Ut quod sequi aspernatur ducimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque recusandae quia odio sit qui quidem nulla harum natus, voluptatem magni? Modi, eum! Quaerat dignissimos vero, possimus laboriosam labore maxime in?</p>
+    <br><br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit atque laudantium cumque, libero quam impedit molestias earum. Ex natus expedita quam, animi exercitationem repudiandae consequatur officiis quasi maxime voluptatem voluptas. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab veritatis, dolore, laborum sed nesciunt assumenda earum id ducimus enim ullam inventore quisquam suscipit consequatur maiores expedita ea doloribus, asperiores laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum suscipit fugit dolore praesentium eius, porro quam necessitatibus, cupiditate nihil qui laudantium quisquam aut tempore libero. Ut quod sequi aspernatur ducimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque recusandae quia odio sit qui quidem nulla harum natus, voluptatem magni? Modi, eum! Quaerat dignissimos vero, possimus laboriosam labore maxime in?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit atque laudantium cumque, libero quam impedit molestias earum. Ex natus expedita quam, animi exercitationem repudiandae consequatur officiis quasi maxime voluptatem voluptas. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab veritatis, dolore, laborum sed nesciunt assumenda earum id ducimus enim ullam inventore quisquam suscipit consequatur maiores expedita ea doloribus, asperiores laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum suscipit fugit dolore praesentium eius, porro quam necessitatibus, cupiditate nihil qui laudantium quisquam aut tempore libero. Ut quod sequi aspernatur ducimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque recusandae quia odio sit qui quidem nulla harum natus, voluptatem magni? Modi, eum! Quaerat dignissimos vero, possimus laboriosam labore maxime in?</p>
 </body>
 </html>
