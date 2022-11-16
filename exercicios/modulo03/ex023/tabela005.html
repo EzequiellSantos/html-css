@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            position: relative; /* para fazer um cabeçario fixo a sua tabela deve conter essa configuração */
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border: 1px solid black;
+        }  
+        
+        col.nome{
+            background-color: violet;
+        }
+
+        col.int{
+            background-color: yellowgreen;
+        }
+
+        col.prof{
+            background-color: steelblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Na HTML5 existe uma nova tag (colgroup) que da uma definição para as colunas, como destacar -->
+    <h1>Exercícios de Tabelas</h1>
+    <table>
+
+    <!-- 
+
+       <colgroup>
+            <col class="Nome">
+            <col class="Idade">
+            <col class="Sexo">
+            <col class="Profissao">
+             Assim cada coluna tem uma tag (col) então cada col, equivale a uma coluna
+                 tem como colocar um só (col) pra duas colunas, você verá abaixo
+            
+        </colgroup>
+
+    -->
+
+        <colgroup>
+            <col class="nome">
+            <col class="int" span="2"> <!-- Aqui o (span) serve para delimitar no seu caso 2 colunas, assim duas colunas com a mesma classe. Ele também pode configura o tanto de colunas que você quiser e o quanto tiver disponível também-->
+            <col class="prof">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        
+        <tr>
+            <td>Ana Maria</td>
+            <td>25</td>
+            <td>F</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr>
+            <td>Gustavo</td>
+            <td>16</td>
+            <td>M</td>
+            <td>Artista</td>
+        </tr>
+
+        <tr>
+            <td>Adriana</td>
+            <td>27</td>
+            <td>F</td>
+            <td>Costureira</td>
+        </tr>
+
+        <tr>
+            <td>Ângela</td>
+            <td>47</td>
+            <td>F</td>
+            <td>Faxineira</td>
+        </tr>
+
+        <tr>
+            <td>Kiel</td>
+            <td>16</td>
+            <td>M</td>
+            <td>Desenvolvedor</td>
+        </tr>
+
+        <tr>
+            <td>Raquel</td>
+            <td>16</td>
+            <td>F</td>
+            <td>Arquiteta</td>
+        </tr>
+    </table>
+</body>
+</html>
