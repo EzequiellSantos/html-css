@@ -1,7 +1,7 @@
 # html-css
  <p>Curso de HTML5 e CSS3 :four_leaf_clover:</p>
 .
-<p>Minha Introdução em Desenvolvimento Web :rocket:sparkles:</p>
+<p>Minha Introdução em Desenvolvimento Web :rocket::sparkles:</p>
 .
 <p>Sempre Evoluindo em Cada passo :moyai: :wine_glass:</p>
 .
