@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação de iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe{
+            border: 1pxsolid black;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 97vw;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Faça uma escolha
+    </h1>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique repudiandae neque ab officia consequuntur laboriosam iste est eum aliquam consectetur nam deleniti soluta, iusto amet culpa tempore fugiat accusantium provident.</p>
+
+    <ul>
+        <li><a href="paginas.extras/pag001.html" target="frame">Primeira página</a></li> <!-- a opção target serve para apontar o link para o iframe, colocando nome dele (iframe) -->
+        <li><a href="paginas.extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas.extras/pag003.html" target="frame">Terceira Página</a>
+        </li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, praesentium amet. Corrupti debitis mollitia cumque obcaecati veniam delectus eos cupiditate qui autem in! Ex, pariatur aliquid. Aut, velit. Cum, voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptate eos temporibus at, recusandae, laborum delectus ut sequi error quae nisi voluptates cupiditate voluptatem officia fuga id? Accusantium, iste iure?</p>
+    <iframe srcdoc="<h1>Seja muito bem vindo a minha página de testes</h1><p>Obs: clique em um dos links acima :)</p> <img src='Favicon.EZ/CoelhoFavicon.ico.png' alt='coelho.ico'>" name="frame"></iframe> <!-- a função de name, serve como uma variavel para o iframe assim vocÊ pode colocar links apontando para o iframe -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur omnis rem sequi quaerat iure autem inventore temporibus odio possimus! Commodi libero soluta ipsum corrupti non corporis quos mollitia pariatur nobis!</p>
+</body>
+</html>
