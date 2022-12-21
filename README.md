@@ -3,7 +3,7 @@
 
 <p>Minha Introdução em Desenvolvimento Web :rocket::sparkles:</p>
 
-<p>Sempre Evoluindo em Cada passo :moyai: :wine_glass:</p>
+<p>Sempre Evoluindo em Cada passo :moyai::wine_glass:</p>
 
 <p> "Os sonhos não determinam o lugar onde  você vai estar, mas produzem a força nescessária para tirá-lo do lugar onde você está" . . . Augusto Cury</p>
 
