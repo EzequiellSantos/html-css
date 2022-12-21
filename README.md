@@ -1,5 +1,5 @@
 # html-css
- <p>Curso de HTML5 e CSS3 :large_blue_diamond::large_orange_diamond:</p>
+ <p>Curso de HTML5 e CSS3 :orange_circle::white_circle::large_blue_circle::white_circle:</p>
 
 <p>Minha Introdução em Desenvolvimento Web :rocket::sparkles:</p>
 
