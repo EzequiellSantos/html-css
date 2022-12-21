@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens flexiveis</title>
+    <style>
+        img{
+            display: block;
+            margin: auto;
+        }
+        body{
+            background-color: rgba(9, 12, 65, 0.74);
+        }
+    </style>
+</head>
+<body>
+    <picture>
+        <source media="(max-width: 748px)" srcset="imagens/paisagem-p.png" alt="mulher no topo de um penhasco P">
+        <source media="(max-width: 1208px )" srcset="imagens/paisagem-m.png" alt="mulher no topo de um penhasco M">
+        <img src="imagens/paisagem-g.png" alt="mulher no topo de um penhasco G">
+    </picture>
+</body>
+</html>
