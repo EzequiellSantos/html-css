@@ -16,29 +16,31 @@ body{
     background-repeat: no-repeat;
 }
 
-img{
-    max-width: 60px;
-    background-position: center right;
-}
-div{
-/*  padding: 13px; */
-}
-
-ul{
-    display: block ;
-    text-align: right;
-    list-style: none;
-}
-
-li{
-    padding: 10px 5px 5px 0px;
-    
+#ifra{
+    background-image: url('../pacote-d013/imagens/frame-iphone.png');
+    background-attachment: scroll;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 iframe{
-    min-height: 93vh;
+    min-height: 95vh;
     display: block;
     margin: auto;
-    margin-top: -355px;
+    padding-top: 1vh;
 }
+
+img{
+    max-width: 60px;
+}
+
+section#menu{
+    display: block;
+    text-align: right;
+}
+
+
+
+
 
