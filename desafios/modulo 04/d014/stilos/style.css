@@ -61,7 +61,7 @@ section#menu{
 
 section#menu img {
     max-width: 50px;
-    margin: 3px;
+    margin: 8px;
     border-radius: 50%;
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.63);
     transition: all 0.8s;
