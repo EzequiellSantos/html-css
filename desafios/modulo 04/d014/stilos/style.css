@@ -45,10 +45,10 @@ main{
 iframe#frame{
     position: absolute;
     top: 50.4%;
-    left: 50.3%;
+    left: 50.2%;
     transform: translate(-50%, -50%);
-    max-width: 30.2vw ;
-    min-height: 57.0vh;
+    max-width: 205.5px;
+    min-height: 363.4px;
 }
 
 img{
@@ -56,13 +56,30 @@ img{
 }
 
 section#menu{
-    display: block;
-    text-align: center;
-    max-width: 50px;
-    margin-left: 90vw;
-    padding-top: 5px;
+    text-align: right;
 }
 
+section#menu img {
+    max-width: 50px;
+    margin: 3px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.63);
+    transition: all 0.8s;
+}
+
+section#menu img:hover{
+    transform: translate(-3px, -3px);
+    box-shadow: none;
+    border: 2px solid rgba(255, 255, 255, 0.678);
+    box-sizing: border-box; /* essa configuração servce para nao movimentar outros itens ao adicionar a nova borda */
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.753);
+    transition: transform .4s, box-shadow .3s;
+}
+
+section#menu img:active{
+    opacity: 0.7;
+    transition: 0.1s;
+}
 
 
 
