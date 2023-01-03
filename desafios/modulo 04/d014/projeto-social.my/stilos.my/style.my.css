@@ -14,7 +14,7 @@ html, body{
 body{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    background-image: url('../pacote-d013/imagens/fundo-madeira.jpg');
+    background-image: url('../imagens/fundo-madeira.jpg');
     background-position: center top;
     background-attachment: fixed;
     background-size: cover;
@@ -31,11 +31,11 @@ main{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    border-radius: 30px;
     width: 240px;
     height: 500px;
 
-    background: url('../pacote-d013/imagens/frame-iphone.png');
+    background: url('../imagens.mobile/esboco.png');
     background-attachment: scroll;
     background-size: contain;
     background-repeat: no-repeat;
@@ -44,11 +44,12 @@ main{
 
 iframe#frame{
     position: absolute;
-    top: 50.4%;
-    left: 50.2%;
+    top: 49.3%;
+    left: 49.9%;
     transform: translate(-50%, -50%);
-    max-width: 205.5px;
-    min-height: 363.4px;
+    max-width: 209.5px;
+    min-height: 468.9px;
+    border-radius: 20px;
 }
 
 img{
@@ -81,8 +82,31 @@ section#menu img:active{
     transition: 0.1s;
 }
 
+div#fora{
+    position: relative;
+    top: 14%;
+    left: 49.55%;
 
+    background-color: rgb(39, 38, 38)  ;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 1px solid rgb(102, 101, 101);
+    box-sizing: border-box;
+   /*  transform: translate(-0%, -50%); */
 
+}
 
+div#dentro{
+    background-color: rgb(63, 63, 63);
+
+    position: absolute ;
+    top: 13.8%;
+    left: 49.5%;
+
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
 
 
