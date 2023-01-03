@@ -81,6 +81,31 @@ section#menu img:active{
     transition: 0.1s;
 }
 
+div#fora{
+    position: relative;
+    top: 24.3%;
+    left: 49.35%;
 
+    background-color: rgb(39, 38, 38)  ;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid rgb(102, 101, 101);
+    box-sizing: border-box;
+   /*  transform: translate(-0%, -50%); */
+
+}
+
+div#dentro{
+    background-color: rgb(63, 63, 63);
+
+    position: absolute ;
+    top: 23.5%;
+    left: 49%;
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
 
 
