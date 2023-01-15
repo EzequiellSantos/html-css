@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+</head>
+<body>
+    <h1>Meu Site Principal</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex vero natus labore laboriosam fugiat voluptatibus ea facilis laudantium quam aut officiis a illo veritatis, assumenda voluptatem blanditiis pariatur, tempore eos.</p>
+    <iframe src="paginas.extras/pag005.html" sandbox="sandbox" referrerpolicy="no-referrer" ></iframe> <!-- liga o máximo de segurança possível (sandbox) e não recebe nenhuma informação do usuário, e para conseguir reponder  a um formulário você pode ativar as seguintes configurações
+        
+        sandbox="allow-same-origin allow-forms allow-scripts"
+(todo o conteúdo da mesma origrem)(todos formulários)(todos os scripts)
+
+        todo o resto será bloqueado
+
+    -->
+
+    <!-- por padrão o referrerpolicy recebe "no-referrer-when-downgrade" o no-referrer vai ligar o máximo de proteção no iframe, pois nao recebe nada do usuário  -->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex vero natus labore laboriosam fugiat voluptatibus ea facilis laudantium quam aut officiis a illo veritatis, assumenda voluptatem blanditiis pariatur, tempore eos.</p>
+</body>
+</html>

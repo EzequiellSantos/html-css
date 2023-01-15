@@ -1,0 +1,239 @@
+@charset    'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2? family= Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700; 1.900 & display=trocar');
+
+@font-face {
+    font-family: Sans francisco r;
+    src: url('sans_fransisco/Sans\ Fransisco\ Regular.ttf')
+    format('truetype');
+    font-size: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: sans francisco sb;
+    src: url('sans_fransisco/Sans\ Fransisco\ Semi\ Bold.ttf')
+    format('opentype');
+}
+
+@font-face {
+    font-family: roboto;
+    src: url('roboto/Roboto-Light.ttf')
+    format('truetype');
+}
+
+@font-face {
+    font-family: roboto bold;
+    src: url('roboto/Roboto-BoldCondensed.ttf')
+    format('truetype');
+}
+
+@font-face {
+    font-family: roboto bold italic;
+    src: url('roboto/Roboto-BoldItalic.ttf')
+    format('truetype');
+}
+@font-face {
+    font-family: roboto medio;
+    src: url('roboto/Roboto-Medium.ttf')
+    format('truetype');
+}
+
+@font-face {
+    font-family: roboto regular;
+    src: url('roboto/Roboto-Regular.ttf')
+    format('truetype');
+}
+
+@font-face {
+    font-family: roboto thin ;
+    src: url('roboto/Roboto-Thin.ttf')
+    format('truetype');
+}
+
+:root{
+    --corlor:#d0e6f9;
+    --cor00:#F2F2F2;
+    --cor01:#c3d7e7;
+    --cor02:#6db5f3;
+    --cor03:#1376ce;
+    --cor04:#065ac7; 
+    --cor05:#05418f;
+    /* --cor06:bla; */
+    
+    --fonte00: 'sans francisco r', arial, helvetica, sans-serif;
+    --fonte01: 'sans francisco sb', arial, helvetica, sans-serif;
+    --fonte02 :'roboto', arial, helvetica, sans-serif;
+    --fonte03:'roboto medio', arial, helvetica, sans-serif;
+    --fonte04:'roboto regular', arial, helvetica, sans-serif;
+    --fonte05: 'roboto bold', arial, helvetica, sans-serif;
+    --fonte06: 'roboto bold italic', arial;
+    --fonte07:'roboto thin', arial, helvetica, sans-serif;
+}
+body{
+    background-color: var(--cor01);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+header{
+    color: white;
+    background-image: linear-gradient(to right, var(--cor05), var(--cor00));
+    text-align: left;
+    min-height: 150px;
+    padding: 40px 0px 0px 10px;
+}
+
+header > h1{
+    font-family: var(--fonte01);
+    font-size: 4em;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.699);
+    margin: 0px 0px 20px 11px;
+    padding: 5px 0px 0px 10px;
+}
+
+header > p{
+    margin-top: 10px;
+    /* font-family: var(--fonte04); */
+    font-size: 1.2em;
+    padding: 0px 0px 25px 20px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.938);
+    text-align: left;
+}
+
+nav{
+    font-weight: bold;
+    background-image: linear-gradient(to right, var(--cor05), var(--cor00));
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.205);
+    display: block;
+    padding: 10px 10px 10px 10px;
+
+}
+
+nav > a {
+    color: var(--corlor);
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover{
+    color:var(--cor05);
+    background-color: var(--cor02);
+    border-radius: 5px;
+}
+
+a:active{
+    background-color: var(--cor02);
+}
+
+main{
+    background-color:  white/* var(--cor00) */;
+    font-family: var(--fonte04);
+    margin: auto;
+    margin-bottom: 30px;
+/*     display: block; */
+    text-align: center;
+    min-width: 400px;
+    max-width: 1000px;
+    padding-bottom: 20px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.247);
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+main img{
+    width: 100%;
+}
+span{
+    color: var(--cor05);
+}
+
+h1.titulo{
+    margin-top: 20px;
+    text-align: left;
+    color: var(--cor05);
+    padding-left: 5px;
+    background-image: linear-gradient(to right, var(--cor02), var(--cor00) );
+}
+
+aside{
+    padding: 20px;
+    background-color: white/* var(--cor00) */;
+    margin: auto;
+    box-shadow: Opx 3px 4px black;
+}
+
+aside > p{
+    margin: 15px 0px;
+    text-align: justify;
+    line-height: 2.0em;
+    font-size: 1em;
+}
+
+aside.crosd{
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: var(--cor02);
+}
+
+aside.crosd > h2{
+    padding: 7px 0px 7px 10px;
+    color: var(--cor00);
+    background-color: #065ac7;
+    text-align: left;
+    border-radius: 10px 10px 0px 0px ;
+    margin: -20px -20px 0px -20px;
+}
+
+#linkxt{
+    color: var(--cor05);
+    text-decoration: none;
+    background-color: white/* var(--cor00) */
+   
+}
+
+#linkxt:hover{
+    transition: 0.4s;
+    text-decoration: underline;
+    color: var(--cor02);
+}
+
+#linkxt:active{
+    color: var(--cor01);
+    background-color: var(--cor03);
+}
+
+#linkxt::after{
+    content: '\00A0\1F517';
+}
+
+footer{
+    background-color: var(--cor05);
+    width: auto;
+    height: 15px;
+    padding: 5px;
+}
+
+footer > p{
+    font-size: 0.8em;
+    text-align: center;
+    color: var(--cor01);
+}
+
+#linkexe{
+    color: var(--cor00);
+    text-decoration: none;
+}
+
+#linkexe:hover{
+    background-color: var(--cor05) ;
+    color: var(--cor02);
+    transition: all 0.4s;
+    text-decoration: underline;
+    
+}

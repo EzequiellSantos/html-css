@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Botão Bolha</title>
+ 
+</head>
+<body>
+    <!--     -->
+    <button class="bubl">
+        Aperte !
+    </button>
+    
+    <script>
+         var animateButton = function (e) {
+            e.preventDefault;
+            //reset animation
+            e.target.classList.remove("animate");
+
+            e.target.classList.add("animate");
+            setTimeout(function () {
+                e.target.classList.remove("animate");
+            }, 700);
+        };
+
+        var bubls = document.getElementsByClassName("bubl");
+
+        for (var i = 0; i < bubls.length; i++) {
+            bubls[i].addEventListener("click", animateButton, false);
+        }
+
+    </script>
+</body>
+</html>

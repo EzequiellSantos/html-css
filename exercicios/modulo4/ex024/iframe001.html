@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Iframes</title>
+    <style>
+        p{
+            margin-bottom: 50px;
+        }
+        iframe{
+            height: 600px;      /* em relação a hierarquia, a configuração que vai mandar no iframe sempre a prioridade é das folhas de estilo */
+            width: 400px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de iframes</h1>
+    <p>
+        Acessando o site do             <!-- por padrão o iframe tem 300px largura  150px de altura -->
+
+        <iframe src="https://ezequiellsantos.github.io/projeto-cordel/" frameborder="0" scrolling="no"  >Kiel que tem o <a href="https://ezequiellsantos.github.io/projeto-cordel/" target="_blank">Projeto Corde</a>l</iframe>
+        
+        para ver um poema
+    </p>
+
+    <p>
+        acessando o site do 
+
+        <iframe src="https://cursoemvideo.com" height="300px" frameborder="0">
+            <a href="https://cursoemvideo.com" target="_blank">Curso em Vídeo</a>
+        </iframe>
+
+        para aprender a programar
+    </p>
+
+    <p>
+        o site 
+
+        <iframe src="https://ezequiellsantos.github.io/projeto-android/"  width="500px" frameborder="0">também do kiel <!-- você pode aplicar tanto height quanto width -->que tem o <a href="https://ezequiellsantos.github.io/projeto-android/" target="_blank">projeto android</a></iframe> <!--  alguns sites tem a proteçã contra iframes -->
+
+        também é muito legal,
+    </p>
+</body>
+</html>

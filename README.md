@@ -1,5 +1,11 @@
 # html-css
- Curso de HTML5 e CSS3 
+ <p>Curso de HTML5 e CSS3 :orange_circle::white_circle::large_blue_circle:</p>
 
- Meu Repositório No GitHub
-<a href="https://ezequiellsantos.github.io/html-css/exercicios/modulo01/ex001/">Executar Exercício 001</a>
+<p>Minha Introdução em Desenvolvimento Web :rocket::sparkles:</p>
+
+<p>Sempre Evoluindo em Cada passo :computer::blue_book::pencil2:</p>
+
+<p> "Os sonhos não determinam o lugar onde  você vai estar, mas produzem a força nescessária para tirá-lo do lugar onde você está" . . . Augusto Cury</p>
+
+<!-- <a href="https://ezequiellsantos.github.io/html-css/exercicios/modulo01/ex001/">Executar Exercício 001</a> -->
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+<style>
+    #conteiner{
+
+        /* quem ta por fora ou seja o conteúdo maior fica com a posição absolute */
+        background-image: url('imagens/target001.png');
+        background-size: 100% 100%; /* para a imagem ficar 100% do conteiner */
+
+        position: relative;
+        height: 94vh;
+
+        padding: 10px;
+        background-color: purple;
+        
+    }
+
+    #conteudo{
+        /* e o conteúdo de cima é absolute */
+        background-image: url('imagens/target001.png');
+        background-size: 100% 100%; /* para a imagem ficar 100% do conteiner */
+        position: absolute;
+
+        height: 200px;
+        width: 400px;
+
+        background-color: yellow;
+        /* com o conteúdo é absolute, da para configurar 2 propriedades  left e top */
+
+        left: 50%;/* desloca 50% para a direita */
+        top: 50%;/* desloca 50% para baixo */
+
+        transform: translate(
+            -50%/* desloca 50% para a esquerda ja que o valor está negativo */,
+            -50%/* desloca para cima ja que o valor está negativo */
+        );
+    }
+</style>
+
+</head>
+<body>
+    <section id="conteiner">
+        <article id="conteudo">
+
+        </article>
+    </section>
+
+</body>
+</html>

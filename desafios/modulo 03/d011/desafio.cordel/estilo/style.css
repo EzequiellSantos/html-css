@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Shadows+Into+Light&family=Sriracha&display=swap');
+
+:root{
+    --fonte01:  Verdana, Geneva, Tahoma, sans-serif;
+    --fonte02: 'Passion One', cursive;
+    --fonte03:  'Sriracha', cursive;
+    --fonte04: 'Shadows Into Light', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte01);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 7vw; 
+    font-family: var(--fonte02);
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: var(--fonte04);
+    font-size: 1.2em;
+}
+
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2.0em;
+    padding-left: 30px;
+    font-family: var(--fonte03);
+    font-size: 3.4vw;
+}
+
+section > P{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgba(61, 61, 61, 0.589);
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.904);
+    box-shadow: inset 5px 6px 10px 0px rgba(0, 0, 0, 0.486);
+}
+
+section#img01{
+    background-image: url('../pacote-d012/imagens/background001.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:  right center;
+}
+
+section#img02{
+    background-image: url('../pacote-d012/imagens/background002.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:  right center;
+}
+
+section.imagem > p{
+    padding: 6px;
+    display: inline-block;
+    /*
+     antes estava width:400px; mas deu uma puxada para o height, então a solução é colocar um display inline-block. assim ele ocupará todo o conteúdo de (p) {transformou numa caixa que se adpta ao tamnho do conteúdo}
+    */
+    background-color: rgba(0, 0, 0, 0.459);
+}
+
+footer{
+    font-family: var(--fonte04);
+    background-color: black;
+    color: white;
+    padding: 3px;
+    text-align: center;
+}
