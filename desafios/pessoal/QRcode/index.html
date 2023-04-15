@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QRcode</title>
     <link rel="shortcut icon" href="Favicon.EZ/Martin-Berube-Flat-Animal-Mouse.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <style>
-        h1{
+        /* h1{
             text-shadow: rgb(81, 255, 0) -3px 0,rgb(0, 0, 0) 2px 0;
             color: rgb(0, 0, 0);
             letter-spacing: 3px ;
@@ -19,25 +20,26 @@
             color: black;
             font-family: Arial, monospace;
             width: 60px;
-        }
+        } */
     </style>
 </head>
 <body>
     
     
-    <section id="main">
+    <main id="Container">
+        <section id="main">
+            <h1>Criador de QRcode</h1>
 
-        <h1>Criador de QRcode</h1>
+            <input type="text" name="Content" id="input" placeholder="Adicione o Link aqui">
 
-        <input type="text" name="Content" id="input" placeholder="Adicione o Link aqui">
+            <p onclick="clicou ()" id="button">Gerar Imagem</p>
 
-        <p onclick="clicou ()" id="button">Gerar Imagem</p>
+            <img id="qrcode" src=" " alt="inicio">
 
-        <img id="qrcode" src="" alt=" "> 
-
-        <p onclick="resetar ()">Gerar Outra</p>
-
-    </section>
+            <p onclick="resetar ()">Gerar Outra</p>
+            
+        </section>
+    </main>
     
    <script>
         var input = document.getElementById('input')
@@ -61,7 +63,7 @@
             /* let img = document.createElement('img')
             img.setAttribute('id','qrcod') */
 
-            img.innerHTML = `<img  src="https://api.qrserver.com/v1/create-qr-code/?data=${valor}&size=250x250" alt="QrCode">`  
+            img.innerHTML = `<img id="qrcode" src="https://api.qrserver.com/v1/create-qr-code/?data=${valor}&size=120x120" alt="QrCode">`  
             //criação do QRcode
         }
 
