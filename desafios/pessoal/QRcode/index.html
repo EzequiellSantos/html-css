@@ -8,14 +8,67 @@
     <link rel="shortcut icon" href="Favicon.EZ/Martin-Berube-Flat-Animal-Mouse.ico" type="image/x-icon">
     <style>
         h1{
-            text-shadow: rgb(81, 255, 0) -4px 0,rgb(0, 0, 0) 2px 0;
+            text-shadow: rgb(81, 255, 0) -3px 0,rgb(0, 0, 0) 2px 0;
             color: rgb(0, 0, 0);
+            letter-spacing: 3px ;
+        }
+
+        p{
+            background-color: aquamarine;
+            padding: 10px;
+            color: black;
+            font-family: Arial, monospace;
+            width: 60px;
         }
     </style>
 </head>
 <body>
-    <h1>Perfil do instagram</h1>
-    <img src="https://api.qrserver.com/v1/create-qr-code/?data=www.instagram.com/__yass__s2&size=250x250" alt="">
-   
+    
+    
+    <section id="main">
+
+        <h1>Criador de QRcode</h1>
+
+        <input type="text" name="Content" id="input" placeholder="Adicione o Link aqui">
+
+        <p onclick="clicou ()" id="button">Gerar Imagem</p>
+
+        <img id="qrcode" src="" alt=" "> 
+
+        <p onclick="resetar ()">Gerar Outra</p>
+
+    </section>
+    
+   <script>
+        var input = document.getElementById('input')
+        var button = document.getElementById('button')
+        var main = document.getElementById('main')
+        var img = document.getElementById('qrcode')
+
+        var valor = input.value
+
+        /* input.addEventListener('keydown', function(event){
+            if(event.keyCode === 13){//validação da tecla enter(código 13)
+                const valor = input.value
+            }
+            
+            //coletando dados do input com A tecla enter
+            
+        }) */
+
+                
+        function clicou () {
+            /* let img = document.createElement('img')
+            img.setAttribute('id','qrcod') */
+
+            img.innerHTML = `<img  src="https://api.qrserver.com/v1/create-qr-code/?data=${valor}&size=250x250" alt="QrCode">`  
+            //criação do QRcode
+        }
+
+        function resetar (){
+            window.location.reload(true)
+        }
+
+   </script>
 </body>
 </html>
