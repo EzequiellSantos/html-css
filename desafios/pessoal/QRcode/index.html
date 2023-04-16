@@ -7,21 +7,6 @@
     <title>QRcode</title>
     <link rel="shortcut icon" href="Favicon.EZ/Martin-Berube-Flat-Animal-Mouse.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* h1{
-            text-shadow: rgb(81, 255, 0) -3px 0,rgb(0, 0, 0) 2px 0;
-            color: rgb(0, 0, 0);
-            letter-spacing: 3px ;
-        }
-
-        p{
-            background-color: aquamarine;
-            padding: 10px;
-            color: black;
-            font-family: Arial, monospace;
-            width: 60px;
-        } */
-    </style>
 </head>
 <body>
     
@@ -30,19 +15,24 @@
         <section id="main">
             <h1>Criador de QRcode</h1>
 
+            <hr>
+
             <input type="text" name="Content" id="input" placeholder="Adicione o Link aqui">
 
-            <p onclick="clicou ()" id="button">Gerar Imagem</p>
-            <img id="inicio" src="Favicon.EZ/Iconka-Meow-Cat-eyes.ico" alt="">
+            <p class="p-buttons" onclick="clicou ()" id="button">Gerar Imagem</p>
+            
             <div id="qrcode">
-
+                <img id="inicio" src="Favicon.EZ/Iconka-Meow-Cat-eyes.ico" alt="">
             </div>
 
-            <p onclick="resetar ()">Gerar Outra</p>
+            <p class="p-buttons" onclick="resetar ()">Gerar Outra</p>           
             
         </section>
+        
     </main>
-    
+    <footer>
+            <p id="p-footer">&copy; Ezequiell Santos</p>
+    </footer>
    <script>
         var input = document.getElementById('input')
         var button = document.getElementById('button')
@@ -52,21 +42,11 @@
 
          input.addEventListener('keydown', function(event){
             if(event.keyCode === 13){//validação da tecla enter(código 13)
+
                 const valor = input.value
-
-                
-            /* let img = document.createElement('img')
-            img.setAttribute('id','qrcod') */
-
-            imagem.src = `https://api.qrserver.com/v1/create-qr-code/?data=${valor}&size=120x120`  
-            //criação do QRcode
-            /* div.innerHTML = `<${imagem}/>` */
-            }
-                
-            
-            
-            //coletando dados do input com A tecla enter
-            
+                imagem.src = `https://api.qrserver.com/v1/create-qr-code/?data=${valor}&size=120x120` 
+                //qrcode do link
+            }      
         }) 
 
                 
@@ -79,7 +59,6 @@
         function resetar (){
             window.location.reload(true)
             input.value = ""
-
         }
 
    </script>
