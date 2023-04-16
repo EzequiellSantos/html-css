@@ -50,8 +50,6 @@
         var div = document.getElementById('qrcode')
         var imagem = document.getElementById('inicio')
 
-        var valor01 = input.value
-
          input.addEventListener('keydown', function(event){
             if(event.keyCode === 13){//validação da tecla enter(código 13)
                 const valor = input.value
@@ -60,8 +58,9 @@
             /* let img = document.createElement('img')
             img.setAttribute('id','qrcod') */
 
-            div.innerHTML = `<img  src="https://api.qrserver.com/v1/create-qr-code/?data=${valor}&size=120x120" alt="QRcode">`  
+            imagem.src = `https://api.qrserver.com/v1/create-qr-code/?data=${valor}&size=120x120`  
             //criação do QRcode
+            /* div.innerHTML = `<${imagem}/>` */
             }
                 
             
@@ -72,15 +71,15 @@
 
                 
         function clicou (){
-
-            div.innerHTML = `<img  src="https://api.qrserver.com/v1/create-qr-code/?data=${valor}&size=120x120" alt="QRcode">`  
+            const valor01 = String(input.value)
+            imagem.src = `https://api.qrserver.com/v1/create-qr-code/?data=${valor01}&size=120x120`  
         }
             
 
         function resetar (){
             window.location.reload(true)
             input.value = ""
-            div.value = ''
+
         }
 
    </script>
