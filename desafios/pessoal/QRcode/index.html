@@ -33,8 +33,10 @@
             <input type="text" name="Content" id="input" placeholder="Adicione o Link aqui">
 
             <p onclick="clicou ()" id="button">Gerar Imagem</p>
+            <img id="inicio" src="Favicon.EZ/Iconka-Meow-Cat-eyes.ico" alt="">
+            <div id="qrcode">
 
-            <img id="qrcode" src=" " alt="inicio">
+            </div>
 
             <p onclick="resetar ()">Gerar Outra</p>
             
@@ -45,30 +47,40 @@
         var input = document.getElementById('input')
         var button = document.getElementById('button')
         var main = document.getElementById('main')
-        var img = document.getElementById('qrcode')
+        var div = document.getElementById('qrcode')
+        var imagem = document.getElementById('inicio')
 
-        var valor = input.value
+        var valor01 = input.value
 
-        /* input.addEventListener('keydown', function(event){
+         input.addEventListener('keydown', function(event){
             if(event.keyCode === 13){//validação da tecla enter(código 13)
                 const valor = input.value
-            }
-            
-            //coletando dados do input com A tecla enter
-            
-        }) */
 
                 
-        function clicou () {
             /* let img = document.createElement('img')
             img.setAttribute('id','qrcod') */
 
-            img.innerHTML = `<img id="qrcode" src="https://api.qrserver.com/v1/create-qr-code/?data=${valor}&size=120x120" alt="QrCode">`  
+            div.innerHTML = `<img  src="https://api.qrserver.com/v1/create-qr-code/?data=${valor}&size=120x120" alt="QRcode">`  
             //criação do QRcode
+            }
+                
+            
+            
+            //coletando dados do input com A tecla enter
+            
+        }) 
+
+                
+        function clicou (){
+
+            div.innerHTML = `<img  src="https://api.qrserver.com/v1/create-qr-code/?data=${valor}&size=120x120" alt="QRcode">`  
         }
+            
 
         function resetar (){
             window.location.reload(true)
+            input.value = ""
+            div.value = ''
         }
 
    </script>
