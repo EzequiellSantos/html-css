@@ -1,19 +1,31 @@
 @charset "UTF-8";
 
 :root{
-    --cor01:#48BD2C;
-    --cor02:#22ff0062;
-    --cor03:#358A20;
+    --cor01:#206410;
+    --cor02:#08f85883;
+    --cor03:#22ee70e0;
     --cor04:#ffffff;
-    --gradient00:#ffffff;
-    --gradient01:#84fc8a;
+
+    --gradient00:#2a6340;
+    --gradient01:#273c75;
     --backgrond: #263D20;
-    --cor:#fff;
+
+    --cor:#ffffffa9;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
 }
 
 *{
     margin: 0;
     padding: 0;
+}
+
+*::selection{
+    background-color: var(--cor031);
+    color: var(--gradient01);
 }
 
 body{
@@ -25,33 +37,14 @@ body{
 
 h1{
     margin: 5px;
+    color: white;
+    font-size: 1.9em;
 }
 
 hr{
     width: 300px;
-}
-
-p.p-buttons{
-    padding: 20px;
-    background-color: var(--cor03);
+    margin: 15px 0px;
     color: var(--cor);
-    border-radius: 10px;
-    cursor: /* default */ grab;
-}
-
-p.p-buttons:active{
-    background-color: var(--cor01);
-}
-
-input{
-    margin: 5px;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-}
-
-input:focus{
-    border: none;
 }
 
 main{
@@ -85,8 +78,64 @@ section#main{
     
 }
 
+input{
+    margin: 20px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+input:focus{
+    outline: 0;
+    box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.507);
+}
+
+p.p-button01{
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    background-color: var(--cor03);
+    color: white;
+    border-radius: 10px;
+    cursor: /* default */ grab;
+    transition:  0.7s;
+}
+
+p.p-button01:hover{
+    transform: scale(1.10);
+    transition: transform 0.7s;
+}
+
+
+p.p-button01:active{
+    background-color: var(--cor02);
+    transition:  0.7s;
+}
+
+p.p-button02{
+    max-width: 140px;
+    margin-top: 50px;
+    text-align: right;
+    margin-right: 150px;
+}
+
+p.p-reload{
+    max-width: 140px;
+    margin-top: 30px;
+    padding: 7px;
+    background-image: linear-gradient(to right , rgba(35, 224, 67, 0.822), rgba(42, 236, 100, 0.849));
+    color: white;
+    border-radius: 8px;
+    cursor: default ;
+    transition: 0.7s;
+}
+
+p.p-reload:hover{
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+
 img{
-    max-width: 120px;
+    max-width: 170px;
 }
 
 div#qrcode{
@@ -113,13 +162,11 @@ footer{
     justify-content: center;
     margin-top: 30px;
     padding: 5px;
-    background-color: var(--gradient01);
+    /* background-color: var(--gradient01); */
 }
 
-#p-footer{
-   
+#p-footer{ 
     max-width: 300px;
     padding: 4px;
-    
-
+    color: white;
 }

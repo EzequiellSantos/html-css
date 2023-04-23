@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QRcode</title>
-    <link rel="shortcut icon" href="Favicon.EZ/Martin-Berube-Flat-Animal-Mouse.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,25 +14,27 @@
     <main id="Container">
         <section id="main">
             <h1>Criador de QRcode</h1>
-
             <hr>
-
             <input type="text" name="Content" id="input" placeholder="Adicione o Link aqui">
-
-            <p class="p-buttons" onclick="clicou ()" id="button">Gerar Imagem</p>
-            
+            <!-- <p class="p-button01" onclick="clicou ()" id="button">
+                Gerar Imagem
+            </p>  -->     
             <div id="qrcode">
-                <img id="inicio" src="Favicon.EZ/Iconka-Meow-Cat-eyes.ico" alt="">
+                <img id="inicio" src="mr.jpg" alt="">
             </div>
-
-            <p class="p-buttons" onclick="resetar ()">Gerar Outra</p>           
-            
+            <!-- 
+                <p class="p-button02">Tamanho</p>
+                 <p class="p-button02">Baixar</p>
+            -->
+            <p class="p-reload" onclick="resetar ()">Gerar Outra</p>  
         </section>
-        
+       
     </main>
+
     <footer>
             <p id="p-footer">&copy; Ezequiell Santos</p>
     </footer>
+
    <script>
         var input = document.getElementById('input')
         var button = document.getElementById('button')
@@ -40,19 +42,34 @@
         var div = document.getElementById('qrcode')
         var imagem = document.getElementById('inicio')
 
-         input.addEventListener('keydown', function(event){
-            if(event.keyCode === 13){//validação da tecla enter(código 13)
+        input.addEventListener('keydown', function(event){
+
+            if(event.keyCode === 13 || input.value.length == ''){//validação do input 
+
+                alert('insira um link')
+                imagem.src = 'mr.jpg'
+
+            }else if(event.keyCode === 13){//validação da tecla enter(código 13)
 
                 const valor = input.value
-                imagem.src = `https://api.qrserver.com/v1/create-qr-code/?data=${valor}&size=120x120` 
-                //qrcode do link
-            }      
-        }) 
+                imagem.src = `https://api.qrserver.com/v1/create-qr-code/?data=${valor}&size=120x120` //qrcode do link
 
+            }   
+
+        }) 
                 
         function clicou (){
-            const valor01 = String(input.value)
-            imagem.src = `https://api.qrserver.com/v1/create-qr-code/?data=${valor01}&size=120x120`  
+            if(input.value.length == ''){
+
+                alert('Insira um Link')
+                imagem.src = 'mr.jpg'
+
+            }else{
+
+                const valor01 = String(input.value)
+                imagem.src = `https://api.qrserver.com/v1/create-qr-code/?data=${valor01}&size=120x120`
+
+            }
         }
             
 
