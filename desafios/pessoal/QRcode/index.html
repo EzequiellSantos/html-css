@@ -10,7 +10,15 @@
 </head>
 <body>
     
-    
+    <header>
+        <nav>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
+    </header>
     <main id="Container">
         <section id="main">
             <h1>Criador de QRcode</h1>
@@ -44,7 +52,7 @@
 
         input.addEventListener('keydown', function(event){
 
-            if(event.keyCode === 13 || input.value.length == ''){//validação do input 
+            if(event.keyCode === 13 && input.value.length == ''){//validação do input 
 
                 alert('insira um link')
                 imagem.src = 'mr.jpg'
@@ -52,7 +60,7 @@
             }else if(event.keyCode === 13){//validação da tecla enter(código 13)
 
                 const valor = input.value
-                imagem.src = `https://api.qrserver.com/v1/create-qr-code/?data=${valor}&size=120x120` //qrcode do link
+                imagem.src = `https://api.qrserver.com/v1/create-qr-code/?data=${valor}&size=170x170` //qrcode do link
 
             }   
 
@@ -67,7 +75,7 @@
             }else{
 
                 const valor01 = String(input.value)
-                imagem.src = `https://api.qrserver.com/v1/create-qr-code/?data=${valor01}&size=120x120`
+                imagem.src = `https://api.qrserver.com/v1/create-qr-code/?data=${valor01}&size=170x170`
 
             }
         }
