@@ -36,27 +36,23 @@ body{
 }
 
 h1{
-    margin: 5px;
     color: white;
-    font-size: 1.9em;
+    font-size: 1.2em;
 }
 
 hr{
-    width: 300px;
-    margin: 15px 0px;
+    width: 180px;
+    margin: 10px 0px;
     color: var(--cor);
 }
 
 main{
     width: 100%;
-    max-width: 960px;
     margin: auto;
     margin-top: 10px;
-    margin-bottom: 10px;
+    height: 56vh;
     display: flex;
     align-items: center;   
-    flex-shrink: 1;
-    flex-basis: 0;
 }
 
 section#main{
@@ -67,20 +63,20 @@ section#main{
     flex-direction: column;
     flex-wrap: wrap;
     margin: auto;
-    margin-top: 90px;
+    margin-top: 20px;
     
     border-radius: 27% 73% 61% 39% / 36% 29% 71% 64% ;
     background-color: var(--cor02);
     max-width: 100%;
     max-height: 100%;
-    width: 410px;
-    height: 410px;
+    width: 430px;
+    height: 430px;
     
 }
 
 input{
-    margin: 20px 0px;
-    padding: 10px;
+    margin: 8px 0px;
+    padding: 8px;
     border-radius: 10px;
     border: none;
 }
@@ -119,8 +115,10 @@ p.p-button02{
 }
 
 p.p-reload{
-    max-width: 140px;
-    margin-top: 30px;
+    max-width: 120px;
+    font-size: 0.9em;
+    font-weight: normal;
+    margin-top: 8px;
     padding: 7px;
     background-image: linear-gradient(to right , rgba(35, 224, 67, 0.822), rgba(42, 236, 100, 0.849));
     color: white;
@@ -135,7 +133,7 @@ p.p-reload:hover{
 }
 
 img{
-    max-width: 170px;
+    max-width: 160px;
 }
 
 div#qrcode{
@@ -147,12 +145,49 @@ div#qrcode{
 
 @media screen and (min-width: 680px) {
 
+    main{
+        max-width: 960px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
     section#main{
-        margin-top: 0px;
+        margin-top: -47px;
         max-width: 100%;
         max-height: 100%;
         width: 600px;
         height: 600px;
+    }
+
+    img{
+        max-width: 170px;
+    }
+
+    hr{
+        width: 300px;
+        margin: 15px 0px;
+        color: var(--cor);
+    }
+
+    h1{
+        margin: 5px;
+        font-size: 1.9em;
+    }
+
+    input{
+        margin: 20px 0px;
+        padding: 10px;
+    }
+
+    p.p-reload{
+        max-width: 140px;
+        margin-top: 30px;
+        padding: 7px;
+    }
+    
+    footer{
+       height: 1px;
+       width: auto;
     }
 }
 
@@ -160,8 +195,8 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
     padding: 5px;
+    height: 35vh;
     /* background-color: var(--gradient01); */
 }
 
