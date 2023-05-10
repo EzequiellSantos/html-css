@@ -30,11 +30,9 @@
             <div id="qrcode">
                 <img id="inicio" src="mr.jpg" alt="">
             </div>
-            <!-- 
-                <p class="p-button02">Tamanho</p>
-                 <p class="p-button02">Baixar</p>
-            -->
+
             <p class="p-reload" onclick="resetar ()">Gerar Outra</p>  
+            <div id="res"></div>
         </section>
        
     </main>
@@ -46,9 +44,12 @@
    <script>
         var input = document.getElementById('input')
         var button = document.getElementById('button')
-        var main = document.getElementById('main')
+        var secti = document.getElementById('main')
         var div = document.getElementById('qrcode')
-        var imagem = document.getElementById('inicio')
+        var imagem = document.getElementById('inicio') 
+        var mewLink = document.getElementsByTagName("a")[0]
+        var res = document.getElementById('res')
+
 
         input.addEventListener('keydown', function(event){
 
@@ -62,6 +63,10 @@
                 const valor = input.value
                 imagem.src = `https://api.qrserver.com/v1/create-qr-code/?data=${valor}&size=170x170` //qrcode do link
 
+                res.innerHTML = `
+                <p class="p-reload">
+                    <a href="https://api.qrserver.com/v1/create-qr-code/?data=${valor}&size=170x170" >Visualizar</a>
+                </p>` 
             }   
 
         }) 
