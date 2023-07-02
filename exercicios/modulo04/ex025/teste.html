@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #all-cards{
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #content-cards{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 300px;
+            height: 300px;
+            gap: 15px;
+        }
+
+        #card01{
+            flex:1 0 120px;
+            height: 120px;
+            background-image: linear-gradient(to bottom, rgb(0, 255, 170), green);
+            border-radius: 10px;
+            text-align: center;
+            line-height: 2.0em;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="all-cards">
+        <div id="content-cards">
+            <div id="card01"><p>Card</p></div>
+            <div id="card01"><p>Card</p></div>
+            <div id="card01"><p>Card</p></div>
+            <div id="card01"><p>Card</p></div>
+            <div id="card01"><p>Card</p></div>
+        </div>
+    </div>
+</body>
+</html>
