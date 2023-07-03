@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu Primeiro Formulário</h1>
+    <form action="cadastro.php" autocomplete="off">
+        
+        <!-- para enviar o valor, precisa criar um action para usar o php para coletar e enviar os dados -->
+        <!-- todo formulário deve estar dentro da tag form -->
+        <!-- não existe ligação entre o (nome) e o inout até o momento -->
+
+
+        <p><label for="inome">Nome: </label> <!-- para fazer a ligação com o input -->
+            <input type="text" name="nome" id="inome">
+        </p> 
+
+        <p><label for="isobrenome">Sobrenome: </label> 
+            <input type="text" name="obrenome" id="isobrenome">
+        </p>
+
+        <p><input type="submit" value="Enviar"></p>
+
+    </form>
+</body>
+</html>
