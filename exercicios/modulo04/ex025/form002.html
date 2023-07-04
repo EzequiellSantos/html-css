@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Teste de Fomulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="15" placeholder="Nome" autocomplete="username"> <!-- sempre que for obrigatório, use required -->
+            <!-- Size vai dizer quantas letras ele vai mostrar no input -->
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="15" autocomplete="current-password"> <!-- usa-se o minlength para limitar o mínimo de caracteres no input. Também funciona para o maxlenght -->
+        </p>
+
+        <!-- 
+            current-password - para senha atuais
+            new-password - para novas senhas
+
+            para sugerir um autocomplete mais específico, se usa o autocomplete (on) no FORM e o específico no input desejado, como o de username para o input de usuário, existe varios outros tipos
+        -->
+
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
