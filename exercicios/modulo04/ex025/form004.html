@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="shortcut icon" href="../Favicon.EZ/Martin-Berube-Flat-Animal-Mouse.ico" type="image/x-icon">
+</head>
+<body>
+    <h2>Teste de Formulário (email, tel)</h2>
+    <form method="get" autocomplete="on">
+        <fieldset> <!-- Grupo de campos  -->
+            <legend>Dados Pessoais</legend> <!-- legenda do fieldset -->
+            <p>
+                <label for="iname">Nome: </label>
+                <input type="text" name="name" id="iname" maxlength="20" required >
+            </p>
+            <p>
+                <label for="iemail">Email: </label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx) xxxx-xxxx">
+                <!-- Pattern == padrão, serve para padronizar o número ou qualquer outra coisa, neste caso está para o número -->
+            </p>
+        </fieldset>
+        <!-- Estudar mais sobre RegEX pattern -->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
