@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Teste de Formulároio</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome: </label>
+            <input type="text" name="usu" id="iusu" placeholder="Nome Completo" maxlength="30" autocomplete="name" required>
+        </p>
+        <p>
+            <label for="inota">Nota: </label>
+            <input type="number" id="inota" min="0" max="10" placeholder="0 a 10" step="0.1" value="8">
+            <!-- o min equivale ao menor numero que deve conter no formulário -->
+            <!-- o max representa o limite que deve ser os números do formulário -->
+            <!-- step significa o passo de cada numéro da seta e tbm os valores em decimais -->
+            <!-- value serve para ka deixar o campo preenchido com o valor desejado -->
+        </p>
+        <p>
+            <label for="imes">Período Letivo: </label>
+            <input type="month" name="mes" id="imes" value="2023-07"> 
+            <!--  -->
+        </p>
+        <p>
+            <label for="idia">Dia da Prova: </label>
+            <input type="date" name="dia" id="idia" value="2023-07-05">
+        </p>
+        <p>
+            <label for="ihora">Horário da Prova: </label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
