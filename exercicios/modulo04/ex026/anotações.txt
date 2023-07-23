@@ -1,4 +1,0 @@
-mobile fist
-  pensar primeiro na versão para celulares. e depois pensar e sem remover muitas coisas e fazer a versão para dispositivos maiores
-
-  de acordo com criador do mobile first que trabalha na google, sites que possuem essa técnica, os algoritmos do google, priorizam e valorizam sites que possuem essa tecnica de estilo, pois visam melhorar a experiencia dos usuários
