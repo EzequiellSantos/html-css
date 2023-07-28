@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="" type="image/x-icon">
-    <link rel="stylesheet" href="estilos/style.css">
     <title>Cosméticos</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTam()"> <!-- quando o body mudar de tamanho -->
     <header>
         <h1>As 5 Maiores Marcas de Cosméticos Do Mundo</h1>
 
         <span onclick="clickMenu ()" id="menu-bugger" class="material-symbols-outlined">menu</span>
 
         <menu id="itens">
+
             <ul>
-                <li><a href="#">Home</a></li>
-                
-                <li><hr><a href="#">Páginas</a></li>
-                
-                <li><hr><a href="#">Artigos</a></li>
-                
+                <li><hr id="hr-topo"><a href="#">Home</a></li>               
+                <li><hr><a href="#">Páginas</a></li>                
+                <li><hr><a href="#">Artigos</a></li>                
                 <li><hr><a href="#">Contato</a></li>
             </ul>
+
         </menu>
+
     </header>
 
     <main>
@@ -37,17 +38,13 @@
             <p>Substância ou tratamento aplicado à face ou a outras partes do corpo para alterar a aparência, para embelezar ou realçar o atractivo da pessoa. Tais preparados podem ser aplicados à pele, às unhas ou ao cabelo. A palavra portuguesa "cosmético" deriva da palavra grega <em>kosmetikós</em>, que significa "hábil em adornar". A moderna indústria de cosméticos fabrica uma vasta série de produtos e compreende diversas empresas com ramificações internacionais               
             </p>
 
-
             <p>No século XX, massificaram-se a produção e o uso de cosméticos, sobretudo graças ao aperfeiçoamento das embalagens e à promoção publicitária desses produtos. Entre as inovações da indústria de cosméticos destacam-se: o tubo descartável, em fins do século XIX, e os produtos químicos para ondulação dos cabelos, os xampus sem sabão, os laquês em aerossol, as tinturas de cabelo menos tóxicas, e a pasta de dentes com flúor, no século XX.</p>
 
-            <p>
-                Dentre os Maiores Produtores de cosméticos do Mundo, encontra-se os Estados Unidos  e a França esta que se destaca mais na parte de fabricações de perfumes
-            </p>
+            <p>Dentre os Maiores Produtores de cosméticos do Mundo, encontra-se os Estados Unidos  e a França esta que se destaca mais na parte de fabricações de perfumes</p>
 
             <h2>Principais Marcas de Cosméticos</h2> 
             
-            <p>
-                conheça agora as principais marcas vendendoras de cosméticos do mundo: <br>
+            <p>conheça agora as principais marcas vendendoras de cosméticos do mundo: <br>
                 <ul>
                     <li><strong>CeraVe</strong>: <br>a marca ocupa o primeiro lugar na categoria de limpeza facial e hidratante facial. Seus produtos de limpeza atingiram cerca de US$ 260 milhões em vendas, enquanto os hidratantes cresceram 40%. </li>
 
@@ -73,11 +70,11 @@
             <p>Referências do Texto:
                 <ul>
                     <li>
-                        <a class="link-footer" href="https://vogue.globo.com/beleza/noticia/2022/08/45-marcas-de-beleza-mais-poderosas-do-mundo-em-2022.html">Vogue Globo
+                        <a class="link-footer" href="https://vogue.globo.com/beleza/noticia/2022/08/45-marcas-de-beleza-mais-poderosas-do-mundo-em-2022.html" target="_blank">Vogue Globo
                         </a>
                     </li>
                     <li>
-                        <a class="link-footer" href="https://pt.wikipedia.org/wiki/Cosm%C3%A9tico">Wikipedia</a>
+                        <a class="link-footer" href="https://pt.wikipedia.org/wiki/Cosm%C3%A9tico" target="_blank">Wikipedia</a>
                     </li>
                 </ul>
             </p>
@@ -85,13 +82,23 @@
         <hr id="hr-footer">
         <section id="section-column">
             <p>Site Desenvolvido Por:</p>
-            <a class="link-footer" href="https://github.com/EzequiellSantos/">Ezequiell Santos</a>
+            <a class="link-footer" href="https://github.com/EzequiellSantos/" target="_blank" rel="author">Ezequiell Santos</a>
         </section>
 
     </footer>
 
     <script>
+        function mudouTam(){
+
+            if(window.innerWidth >= 768){/* innerwidth tamanho da página */
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
+            }
+        }
+
         function clickMenu (){
+            
             if(itens.style.display == 'block'){
                 itens.style.display = 'none'
             }else{
@@ -99,5 +106,6 @@
             }
         }
     </script>
+
 </body>
 </html>
