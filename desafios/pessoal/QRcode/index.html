@@ -6,40 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QRcode</title>
     <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="https://github.com/EzequiellSantos/JavaScript/blob/main/exercicios/moduloD/style-menu/menuSeta.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
 </head>
 <body>
     
     <header>
-        <nav>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
+        <div id="setas" onclick="toggleKeyframe()">
+            <div id="menu01"></div>
+            <div id="menu02"></div>
+    
+            <a id="linkHome" href="https://ezequiellsantos.github.io/Projetos/projeto-portfolio/projetos_02.html" rel="author">
+                <img src="https://raw.githubusercontent.com/EzequiellSantos/Projetos/main/projeto-portfolio/imagens/Icons-Math/icons8-casa-48.png" alt="imagem home" id="img-home">
+            </a>
+        </div>
     </header>
-    <main id="Container">
-        <section id="main">
-            <h1>Criador de QRcode</h1>
-            <hr>
-            <input type="text" name="Content" id="input" placeholder="Adicione o Link aqui">
-            <!-- <p class="p-button01" onclick="clicou ()" id="button">
-                Gerar Imagem
-            </p>  -->     
-            <div id="qrcode">
-                <img id="inicio" src="mr.jpg" alt="">
-            </div>
 
-            <p class="p-reload" onclick="resetar ()">Gerar Outra</p>  
-            <div id="res"></div>
-        </section>
-       
+    <main>
+        <article id="container">
+            <section id="main">
+                <h1>Criador de QRcode</h1>
+                <hr>
+                <input type="text" name="Content" id="input" placeholder="Adicione o Link aqui">
+                <!-- <p class="p-button01" onclick="clicou ()" id="button">
+                    Gerar Imagem
+                </p>  -->
+
+                <div id="qrcode">
+                    <img id="inicio" src="mr.jpg" alt="imagem-inicial">
+                </div>
+
+                <p class="p-reload" onclick="resetar ()">Gerar Outra</p>
+
+                <div id="res"></div>
+            </section>
+        </article>
+
+        <footer>
+            <p id="p-footer">&copy; Ezequiell Santos</p>
+        </footer>
     </main>
 
-    <footer>
-            <p id="p-footer">&copy; Ezequiell Santos</p>
-    </footer>
+    
 
    <script>
         var input = document.getElementById('input')
@@ -65,7 +74,7 @@
 
                 res.innerHTML = `
                 <p class="p-reload">
-                    <a href="https://api.qrserver.com/v1/create-qr-code/?data=${valor}&size=170x170" >Visualizar</a>
+                    <a href="https://api.qrserver.com/v1/create-qr-code/?data=${valor}&size=170x170" target="_blank" rel="next">Visualizar</a>
                 </p>` 
             }   
 
@@ -91,6 +100,43 @@
             input.value = ""
         }
 
+
+    /* Menu */
+    var homeImg = document.getElementById('img-home');/* imagem home */
+    var div01 = document.getElementById('menu01')/* div 1 da seta */
+    var div02 = document.getElementById('menu02');/* div 2 da seta */
+
+    function toggleKeyframe() {
+
+        var menuSt = document.getElementById('setas');
+
+        if (setas.classList.contains("actived_02")){/* removendo as animações do menu */
+
+            homeImg.style.display = 'none'
+            homeImg.classList.remove('mostrar')
+
+            menuSt.classList.remove('actived_02')
+
+            div01.classList.remove('actived')
+            div02.classList.remove('actived')
+
+        }else{ /* adicionando as animações do menu */
+
+            menuSt.classList.add('actived_02')
+            menuSt.style.transition = 'none'
+
+            homeImg.classList.add('actived_02')
+            homeImg.style.display = 'block'
+            setTimeout(function(){
+                homeImg.classList.add('mostrar')
+            }, 600) /* delay de surgimento */
+            homeImg.style.display = 'block'
+
+            div01.classList.add('actived')
+            div02.classList.add('actived')
+        }
+        
+    }
    </script>
 </body>
 </html>

@@ -28,7 +28,10 @@
     color: var(--gradient01);
 }
 
+
 body{
+    height: 100vh;
+    width: 100vw;
     background-image: linear-gradient(30deg, var(--gradient00), var(--gradient01));
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
@@ -42,8 +45,10 @@ h1{
 
 hr{
     width: 180px;
+    height: 1px;
     margin: 10px 0px;
-    color: var(--cor);
+    border: none;
+    background-color: var(--cor);
 }
 
 a{
@@ -53,30 +58,33 @@ a{
 
 main{
     width: 100%;
+    height: 100%;
+}
+
+#container{
+    width: 98%;
     margin: auto;
-    margin-top: 10px;
-    height: 56vh;
+    height: 550px;
     display: flex;
     align-items: center;   
 }
 
-section#main{
+#main{
     /* centralização */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: auto;
     margin-top: 20px;
     
     border-radius: 27% 73% 61% 39% / 36% 29% 71% 64% ;
     background-color: var(--cor02);
-    max-width: 100%;
-    max-height: 100%;
-    width: 430px;
-    height: 430px;
-    
+    max-width: 420px;
+    max-height: 580px;
+    margin: auto;
+    width: 100%;
+    height: 80%;
 }
 
 input{
@@ -91,17 +99,18 @@ input:focus{
     box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.507);
 }
 
+/*
 p.p-button01{
     padding: 15px 10px;
     margin-bottom: 10px;
     background-color: var(--cor03);
     color: white;
     border-radius: 10px;
-    cursor: /* default */ grab;
+    cursor:  default;
     transition:  0.7s;
 }
 
-p.p-button01:hover{
+ p.p-button01:hover{
     transform: scale(1.10);
     transition: transform 0.7s;
 }
@@ -117,19 +126,21 @@ p.p-button02{
     margin-top: 50px;
     text-align: right;
     margin-right: 150px;
-}
+} */
 
 p.p-reload{
-    max-width: 120px;
+    max-width: 140px;
+
+    text-align: center;
     font-size: 0.9em;
-    font-weight: normal;
-    margin-top: 8px;
-    padding: 7px;
-    background-image: linear-gradient(to right , rgba(35, 224, 67, 0.822), rgba(42, 236, 100, 0.849));
+    background-image: linear-gradient(150deg, rgba(35, 224, 67, 0.822), rgba(78, 236, 126, 0.849));
     color: white;
+
+    margin-top: 8px;
+    padding: 6px;
     border-radius: 8px;
     cursor: default ;
-    transition: 0.7s;
+    transition: width 0.7s;
 }
 
 p.p-reload:hover{
@@ -138,7 +149,7 @@ p.p-reload:hover{
 }
 
 img{
-    max-width: 160px;
+    max-width: 100%;
 }
 
 div#qrcode{
@@ -146,67 +157,148 @@ div#qrcode{
     border-radius: 8px;
     background-color: var(--cor03);
     margin: 10px;
-}
-
-@media screen and (min-width: 680px) {
-
-    main{
-        max-width: 960px;
-        height: auto;
-        margin-bottom: 10px;
-    }
-
-    section#main{
-        margin-top: -47px;
-        max-width: 100%;
-        max-height: 100%;
-        width: 600px;
-        height: 600px;
-    }
-
-    img{
-        max-width: 170px;
-    }
-
-    hr{
-        width: 300px;
-        margin: 15px 0px;
-        color: var(--cor);
-    }
-
-    h1{
-        margin: 5px;
-        font-size: 1.9em;
-    }
-
-    input{
-        margin: 20px 0px;
-        padding: 10px;
-    }
-
-    p.p-reload{
-        max-width: 140px;
-        margin-top: 30px;
-        padding: 7px;
-    }
-    
-    footer{
-       height: 1px;
-       width: auto;
-    }
+    max-width: 30%;
 }
 
 footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    margin: auto;
     padding: 5px;
-    height: 35vh;
     /* background-color: var(--gradient01); */
 }
 
 #p-footer{ 
-    max-width: 300px;
     padding: 4px;
     color: white;
+}
+
+
+/*  menu */
+#setas{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: left;
+    cursor: pointer;
+    position: fixed;
+    top: 5vh;
+    right: 10px;
+    width: 40px;
+    height: 38px;
+    border-radius: 10px;
+    padding-bottom: 8px;
+    z-index: 1;
+    background-color: var(--cor03);
+    animation: remobig 0.6s both;
+}
+
+/* adicionando a animação de crescer o menu */
+#setas.actived_02{
+    animation: big 0.5s both;
+}
+
+@keyframes big {/* crescer o Menu */
+    0%{
+        width: 40px;
+        height: 45px;
+    }
+    100%{
+        width: 90px;
+        height: 45px;
+    }
+}
+
+@keyframes remobig {/* diminuir o menu */
+    100%{
+        width: 40px;
+        height: 45px;
+    }
+    0%{
+        width: 90px;
+        height: 45px;
+    }
+}
+
+div#menu02{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 18px;
+    height: 3px;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    background-color: aliceblue;
+    z-index: 1;
+    transition: all 0.7s;
+}
+
+div#menu01{
+    position: absolute;
+    top: 31px;
+    right: 10px;
+    width: 18px;
+    height: 3px;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    background-color: aliceblue;
+    z-index: 1;
+    transition: all 0.7s;
+}
+
+div#menu01.actived{
+    top: 24px;
+    width: 25px;
+    animation: rotateTw ease-in-out;
+    transition: all 0.7s;
+    z-index: 1; /* animação da seta > x */
+}
+
+div#menu02.actived{
+    top: 24px;
+    width: 25px;
+    animation: rotateOn ease-in-out;
+    transition: all 0.7s; /* animação da seta > x */
+}
+
+@keyframes rotateOn {/* animação rotação */
+    0%{
+        transform: rotate(-45deg);
+    }
+    
+    100%{
+        transform: rotate(-50deg);
+    }
+}
+
+@keyframes rotateTw { /*  animação rotação */
+    0%{
+        transform: rotate(45deg);
+    }
+    
+    100%{
+        transform: rotate(49deg);
+    }
+}
+
+#linkHome{
+    position: absolute;
+    width: 30px;
+    right: 50px;
+    margin: 10px 0px 0px 0px;
+}
+
+
+#img-home{/*  imagem home */
+    display: none;
+    transition: opacity 0.7s;
+    opacity: 0;
+}
+
+#img-home.mostrar{/* transição de surgimento */
+    margin-right: 50px;
+    opacity: 1;
+}
+
+img#img-home, img#img-menu, img#img-off{
+    width: 30px;
 }
