@@ -75,16 +75,17 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-top: 20px;
     
     border-radius: 27% 73% 61% 39% / 36% 29% 71% 64% ;
     background-color: var(--cor02);
-    max-width: 420px;
-    max-height: 580px;
     margin: auto;
-    width: 100%;
-    height: 80%;
+    width: 430px;
+    height: 75%;
+
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function: ease;
 }
 
 input{
@@ -132,6 +133,7 @@ p.p-reload{
     max-width: 140px;
 
     text-align: center;
+    font-weight: normal;
     font-size: 0.9em;
     background-image: linear-gradient(150deg, rgba(35, 224, 67, 0.822), rgba(78, 236, 126, 0.849));
     color: white;
